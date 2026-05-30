@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Evolution Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <h1>Car Evolution Video Generator</h1>
+      <p>Create a cinematic car evolution story with Veo 3.1.</p>
+    </section>
+
+    <section class="form-card">
+      <label>
+        Video title
+        <input id="title" type="text" placeholder="Evolution of electric supercars" value="Car Evolution" />
+      </label>
+
+      <label>
+        Duration (seconds)
+        <input id="length" type="number" min="5" max="60" value="15" />
+      </label>
+
+      <label>
+        Style
+        <input id="style" type="text" placeholder="Futuristic documentary, retro, cinematic" value="Futuristic documentary" />
+      </label>
+
+      <label>
+        Description / prompt
+        <textarea id="prompt" rows="5" placeholder="Describe the car evolution story..."></textarea>
+      </label>
+
+      <button id="generateBtn">Generate Video</button>
+      <div id="status"></div>
+    </section>
+
+    <section class="result-card">
+      <h2>Generated Video</h2>
+      <div id="result">
+        <p>No video yet. Click Generate.</p>
+      </div>
+    </section>
+
+    <section class="notes-card">
+      <h2>How to use</h2>
+      <ol>
+        <li>Install dependencies: <code>npm install</code></li>
+        <li>Create a <code>.env</code> file with <code>GEMINI_API_KEY=your_api_key</code></li>
+        <li>Run <code>npm start</code></li>
+        <li>Open the app in your browser and generate.</li>
+      </ol>
+      <p>Note: Veo 3.1 may return a hosted video URL or instructions for playback.</p>
+    </section>
+  </main>
+
+  <script src="client.js"></script>
+</body>
+</html>

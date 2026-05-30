@@ -1,0 +1,15 @@
+{
+  "name": "car-evolution-generator",
+  "version": "0.1.0",
+  "description": "Car Evolution video generator using Veo 3.1",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.4",
+    "@google/generative-ai": "^0.3.0"
+  }
+}
